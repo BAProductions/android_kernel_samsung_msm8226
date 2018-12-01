@@ -127,7 +127,6 @@ config IMX134
 config SR352
 	bool "Sensor for front camera"
 	depends on MSMB_CAMERA
-	default n
 	---help---
 	  Siliconfile 3MP sensor,
 	  Rear sensor.	  
@@ -143,7 +142,6 @@ config SR030PC50
 config SR130PC20
 	bool "Sensor for front camera"
 	depends on MSMB_CAMERA
-	default n
 	---help---
 	  Siliconfile 1.3MP sensor,
 	  Front sensor.
