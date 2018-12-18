@@ -6684,7 +6684,10 @@ bool is_codec_probe_done(void)
 }
 EXPORT_SYMBOL(is_codec_probe_done);
 #endif
-
+#ifdef CONFIG_SOUND_CONTROL_HAX_GPL
+struct snd_kcontrol_new *gpl_faux_snd_controls_ptr =
+		(struct snd_kcontrol_new *)tapan_common_snd_controls;
+#endif
 static int tapan_codec_probe(struct snd_soc_codec *codec)
 {
 	struct wcd9xxx *control;
